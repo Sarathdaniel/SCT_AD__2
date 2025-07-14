@@ -13,10 +13,10 @@
           android:id="@+id/title"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="TO_DO_list"
+          android:text="Notes"
           android:textColor="@color/white"
           android:textAlignment="center"
-          android:background="#2196F3"
+          android:background="@color/blue"
           android:textSize="29dp"
           />
         <androidx.recyclerview.widget.RecyclerView
@@ -38,13 +38,13 @@
            android:layout_alignParentBottom="true"
            android:layout_alignParentEnd="true"
            android:layout_margin="16dp"
-           android:backgroundTint="#2196F3"
+           android:backgroundTint="@color/blue"
            app:tint="@android:color/white"
            android:src="@drawable/outline_add_2_24"
            android:id="@+id/button" />
 
 
-        />
+
 
 
 

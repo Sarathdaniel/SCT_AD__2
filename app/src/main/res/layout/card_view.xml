@@ -9,42 +9,72 @@
         android:layout_marginHorizontal="4dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp">
-
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="12dp"
+            android:orientation="vertical"
+            android:background="#F7F0F8FF"
+            android:padding="12dp">
 
-            android:gravity="center_vertical">
 
+            <LinearLayout
 
-            <TextView
-                android:id="@+id/taskText"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Task Name"
-                android:textSize="16sp"
-                />
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="12dp">
+                <TextView
+                    android:id="@+id/taskText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Task Name"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/btnEdit"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/baseline_edit_24"
-                android:background="?attr/selectableItemBackgroundBorderless" />
+                android:padding="3dp"
+                android:orientation="horizontal"
+                >
 
-            <ImageButton
-                android:id="@+id/btnDelete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_auto_delete_24"
-                android:background="?attr/selectableItemBackgroundBorderless" />
 
+                <ImageButton
+
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_edit_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="27dp"/>
+
+                <ImageButton
+
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/baseline_auto_delete_24" />
+
+            </RelativeLayout>
 
 
         </LinearLayout>
+
+
+
+
+
+
+
+
     </androidx.cardview.widget.CardView>
 
 
